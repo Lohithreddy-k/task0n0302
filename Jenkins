@@ -1,9 +1,9 @@
 node {
-	stages("scm")
+	stage("scm")
 	{
 		git "https://github.com/Lohithreddy-k/task0n0302.git"
 	}
-	stages("run")
+	stage("run")
 	{
 		sh "java demo.java"
 	}
