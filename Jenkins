@@ -1,0 +1,10 @@
+node {
+	stages("scm")
+	{
+		git "https://github.com/Lohithreddy-k/task0n0302.git"
+	}
+	stages("run")
+	{
+		sh "java demo.java"
+	}
+}
