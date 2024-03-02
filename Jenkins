@@ -1,10 +1,11 @@
-node {
+node
+	{
 	stage("scm")
-	{
-		git "https://github.com/Lohithreddy-k/task0n0302.git"
-	}
+		{
+			git "https://github.com/Lohithreddy-k/task0n0302.git"
+		}
 	stage("run")
-	{
-		sh "java demo.java"
+		{
+			sh "java demo.java"
+		}
 	}
-}
